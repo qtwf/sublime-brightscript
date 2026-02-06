@@ -1,0 +1,23 @@
+%YAML 1.2
+---
+name: XML (BRS)
+scope: source.brightscript
+
+contexts:
+
+  main:
+    - include: cdata
+    - include: scope:text.xml
+
+  cdata:
+    - match: (<!\[)(CDATA)(\[)
+      scope: meta.tag.sgml.cdata.xml
+      captures:
+        1: punctuation.definition.tag.begin.xml
+        2: keyword.declaration.cdata.xml
+        3: punctuation.definition.tag.begin.xml
+      embed: BrightScript.sublime-syntax
+      embed_scope: meta.tag.sgml.cdata.xml
+      escape: ']]>'
+      escape_captures:
+        0: meta.tag.sgml.cdata.xml punctuation.definition.tag.end.xml
