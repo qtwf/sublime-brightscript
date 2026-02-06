@@ -26,8 +26,14 @@ not much was left from the original.
 
 ## Installation (manual)
 
-Use menu "Preferences" -> "Browse Packages..." to open packages directory. Enter `User` subdirectory and copy
-`BrightScript.sublime-syntax` and `BrightScript_comments.tmPreferences` files there.
+Use menu "Preferences" -> "Browse Packages..." to open packages directory.
+
+Copy the following files into the `User` subdirectory:
+
+- `BrightScript.sublime-syntax`
+- `BrightScript_comments.tmPreferences`
+- `XML (BRS).sublime-syntax`
+- `XML (BRS).sublime-settings`
 
 If you want to modify the syntax, it might help to also copy `syntax_test_BrightScript.brs` file to the same directory.
 
