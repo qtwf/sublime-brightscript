@@ -12,7 +12,7 @@ not much was left from the original.
 ## Features
 
 - very basic checks for common mistakes:
-	- opinionated: `function` should have return type declared, `sub` cannot
+	- opinionated: `sub` cannot have return type declared
 	- inline `functions` and `sub` cannot have names
 	- variable name alone in line is an error
 - errors are highlighted
