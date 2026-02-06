@@ -215,7 +215,7 @@ contexts:
       scope: invalid.illegal.missing-parameters
 
   functions-return-type:
-    - match: \s+(?i:(as))\s+({{typename}})\b
+    - match: (\s+(?i:as)\s+{{typename}})?
       captures:
         0: meta.function.return-type.brightscript
         1: keyword.control.brightscript
@@ -230,8 +230,6 @@ contexts:
                 1: keyword.control.brightscript
               pop: 2
             - include: code-block
-    - match: ([^\s\n']+)
-      scope: invalid.illegal.non-return-type-found
 
   functions-header-end:
     - include: comments
